@@ -1,7 +1,8 @@
 import csv
+import sys
 
 VERSION = '0.2.2'
-
+csv.field_size_limit(sys.maxsize)
 
 class Processor(object):
 

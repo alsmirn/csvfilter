@@ -6,6 +6,9 @@ import csv
 from csvfilter import Processor, VERSION
 
 
+csv.field_size_limit(sys.maxsize)
+
+
 def main(options, args):
     infile, outfile = get_files(options, args)
     processor = get_processor(options, args)
